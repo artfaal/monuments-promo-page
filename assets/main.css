@@ -184,8 +184,44 @@ p {
 hr {
   margin: 50px 5%; }
 
+.title-of-the-page {
+  background: linear-gradient(to bottom, #fcfcfc 0%, #e0e0e0 65%, #d9d9d9 75%, #cfcfcf 100%);
+  padding: 20px; }
+
+.title-of-items {
+  font-weight: 700;
+  font-size: 35px;
+  padding-left: 5%;
+  color: #282828; }
+
 .text {
   margin: 0 5%; }
+
+.white-page {
+  width: 100%;
+  text-align: center; }
+
+.wrapper-for-items {
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  display: inline-block; }
+
+.wrapper-item {
+  vertical-align: top;
+  width: 23%;
+  display: inline-block; }
+
+.header-item {
+  color: #ED9100;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  padding-top: 20px; }
+
+.text-item {
+  padding: 15px 5px;
+  color: #282828; }
 
 footer {
   width: 100%;
