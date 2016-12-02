@@ -82,7 +82,8 @@ img {
   line-height: 50px;
   color: #707173;
   background-color: #ffffff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .row > nav > div:hover > a {
   transition: background-color 0.3s ease;
