@@ -1,0 +1,49 @@
+{% extends "layout.html" -%}
+{%- block title -%}Главная {% endblock -%}
+{% block description -%}{% endblock -%}
+{%- block keywords -%}{%- endblock -%}
+{% block content %}
+    <div class="parallax-window" data-parallax="scroll"
+         data-image-src="{{ url_for('static', filename='img/header_02.jpg') }}"></div>
+    <div class="title-of-the-page">
+        <h1 class="title-of-items">Продукты</h1>
+    </div>
+    <div class="white-page">
+        <!-- .wrapper-for-items>(.wrapper-item>.img-item+.header-item+.text-item)*4 -->
+        <div class="wrapper-for-items">
+            <a href="#">
+                <div class="wrapper-item">
+                    <div class="img-item"><img src="{{ url_for('static', filename='img/items/control.jpg') }}" alt=""
+                                               height="230px"></div>
+                    <div class="header-item">IRON Control</div>
+                    <div class="text-item">Пульт управления для сауны.</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="wrapper-item">
+                    <div class="img-item"><img src="{{ url_for('static', filename='img/items/iron_i.jpg') }}" alt=""
+                                               height="230px"></div>
+                    <div class="header-item">Iron I</div>
+                    <div class="text-item">Электрическая печь для домашних саун.</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="wrapper-item">
+                    <div class="img-item"><img src="{{ url_for('static', filename='img/items/iron_i_iron.jpg') }}"
+                                               alt="" height="230px"></div>
+                    <div class="header-item">Комплект IRON I + IRON Control</div>
+                    <div class="text-item">Комплект: электрическая печь для сауны и пульт управления.</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="wrapper-item">
+                    <div class="img-item"><img src="{{ url_for('static', filename='img/items/iron_i_econ.jpg') }}"
+                                               alt="" height="230px"></div>
+                    <div class="header-item">Комплект IRON I + ECON D1</div>
+                    <div class="text-item">Комплект: электрическая каменка для компактной сауны с пультом управления.
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock %}
