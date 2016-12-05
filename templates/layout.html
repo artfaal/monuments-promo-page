@@ -4,26 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{%- block title -%}{%- endblock -%} | Monuments</title>
-    <meta name="description" content= "{% block description -%}{% endblock -%}">
+    <meta name="description" content="{% block description -%}{% endblock -%}">
     <meta name="keywords" content="{%- block keywords -%}{%- endblock -%}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/main.css') }}">
-    <script src="{{ url_for('static', filename='/assets/js/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='/assets/js/parallax.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/parallax.min.js') }}"></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}?v=1">
 </head>
 <body>
 {% block header -%}
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="logo">
-                <img src="{{ url_for('static', filename='img/monuments-logo.png') }}" alt="">
-            </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="logo">
+                    <a href="/"><img src="{{ url_for('static', filename='img/monuments-logo.png') }}" alt=""></a>
+                </div>
                 {# Navigation
                 ======================================= -#}
                 {% include 'top_nav.html' -%}
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 {% endblock -%}
 {% block content -%}
 {% endblock -%}
