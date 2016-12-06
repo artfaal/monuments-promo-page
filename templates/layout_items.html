@@ -1,0 +1,15 @@
+{% extends "layout.html" -%}
+{% block content %}
+    <div class="parallax-window" data-parallax="scroll"
+         data-image-src="{{ url_for('static', filename='img/header_02.jpg') }}"></div>
+    <div class="title-of-the-page">
+        <div class="wrapper-text">
+            <h1>{% block name_of_item %}Название товара{% endblock %}</h1>
+            <h2>{% block little_desc_item %}А тут описание маленькое</h2>{% endblock %}
+        </div>
+    </div>
+    <div class="white-page">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, assumenda corporis dicta et expedita inventore ipsa laudantium nemo nobis nostrum quas quidem quisquam saepe sapiente voluptatem? At dolores hic quod?
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+{% endblock %}
