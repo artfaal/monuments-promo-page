@@ -4,12 +4,43 @@
          data-image-src="{{ url_for('static', filename='img/header_02.jpg') }}"></div>
     <div class="title-of-the-page">
         <div class="wrapper-text">
-            <h1>{% block name_of_item %}Название товара{% endblock %}</h1>
-            <h2>{% block little_desc_item %}А тут описание маленькое</h2>{% endblock %}
+            <h1>{% block name_of_item %}IRON Control{% endblock %}</h1>
+            <h2>{% block little_desc_item %}Пульт управления для электрических печей IRON CONTROL</h2>{% endblock %}
         </div>
     </div>
-    <div class="white-page">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, assumenda corporis dicta et expedita inventore ipsa laudantium nemo nobis nostrum quas quidem quisquam saepe sapiente voluptatem? At dolores hic quod?
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="item-properties-page">
+        <div class="text-of-item">
+            <p>Пульт предназначен для управления электрическими печами в режиме сухой (финской) сауны. Для частного
+                использования.</p>
+            <p>Компактное устройство осуществляет управление настройками всех функциональных возможностей домашней
+                сауны, а
+                именно: температурой в сауне, освещением и вентиляцией. При этом, навигация и меню интуитивно просты и
+                понятны
+                для абсолютно любого человека. Выбранные настройки и параметры отображаются на LCD дисплее. Пульт
+                разработан и
+                протестирован в Германии, и отвечает высоким европейским стандартам качества. Толщина пульта всего 60
+                мм, что
+                позволяет осуществлять встроенный монтаж.</p>
+            <p>Технические характеристики:</p>
+            <ul>
+                <li>Корпус: серого цвета, изготовлен из алюминия и пластика</li>
+                <li>Мультиязычное меню: 6 языков (русский, казахский, украинский, английский, французский, немецкий)
+                </li>
+                <li>Регулировка температуры: 40–115 °C</li>
+                <li>Функция ограничения нагрева при температуре 139 °С</li>
+                <li>Управление светом (до 500 Вт)</li>
+                <li>Возможность подключения вентилятора</li>
+                <li>Размеры (В х Ш х Г): 140 х 190 х 60 мм</li>
+                <li>Напряжение: 400 V 3N AC 50Hz</li>
+                <li>Коммутируемая мощность: до 9,0 кВт</li>
+                <li>Класс защиты: IP x 4 по EN 60529 (защита от брызг)</li>
+                <li>Температура эксплуатации: –10 до + 40 °С</li>
+                <li>Вес: 1 кг</li>
+                <li>Коммутируемая мощность: 9,0 кВт</li>
+            </ul>
+        </div>
+        <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='img/items/iron_i.jpg') }}" alt="" width="100%">
+        </div>
     </div>
 {% endblock %}

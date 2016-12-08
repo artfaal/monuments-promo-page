@@ -164,11 +164,6 @@ h2 {
   line-height: normal;
 }
 
-p {
-  color: #aaa;
-  font-weight: 300;
-}
-
 @media (max-width: 600px) {
   .row > nav > div > div > a {
     margin: 5px 0;
@@ -241,8 +236,12 @@ hr {
   }
 }
 
-.text {
+.main-page-text {
   margin: 0 5%;
+  p {
+    color: #aaa;
+    font-weight: 300;
+  }
 }
 
 .white-page {
@@ -274,6 +273,24 @@ hr {
 .text-item {
   padding: 15px 5px;
   color: #282828;
+}
+
+.item-properties-page {
+  padding-top: 50px;
+  width: 100%;
+  //margin: 0 5%;
+
+  .text-of-item {
+    padding-left: 5%;
+    float: left;
+    width: 50%;
+    color: #646464;
+  }
+  .img-wrapper {
+    float: right;
+    padding-right: 5%;
+    width: 30%;
+   }
 }
 
 footer {
