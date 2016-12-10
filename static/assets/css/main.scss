@@ -147,6 +147,7 @@ img {
   background-color: #ffffff;
   color: #282828;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .row > nav > div > div > a:hover {
@@ -295,13 +296,22 @@ hr {
 
     .pdf-instruction {
       margin: 20px 0;
-      a {
-        font-size: 16px;
-        color: #ED9100;
-        text-decoration: none;
+      display: inline-block;
+      img {
+        float: left;
       }
-      a:hover {
-        text-decoration: underline;
+      .text-instruction {
+        float: left;
+        line-height: 1.65;
+
+        a {
+          font-size: 16px;
+          color: #ED9100;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

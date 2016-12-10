@@ -121,7 +121,8 @@ img {
   text-align: center;
   background-color: #ffffff;
   color: #282828;
-  transition: background-color 0.3s ease; }
+  transition: background-color 0.3s ease;
+  text-decoration: none; }
 
 .row > nav > div > div > a:hover {
   background-color: darkorange;
@@ -239,13 +240,19 @@ hr {
     .item-properties-page .text-of-item hr {
       margin: 0; }
     .item-properties-page .text-of-item .pdf-instruction {
-      margin: 20px 0; }
-      .item-properties-page .text-of-item .pdf-instruction a {
-        font-size: 16px;
-        color: #ED9100;
-        text-decoration: none; }
-      .item-properties-page .text-of-item .pdf-instruction a:hover {
-        text-decoration: underline; }
+      margin: 20px 0;
+      display: inline-block; }
+      .item-properties-page .text-of-item .pdf-instruction img {
+        float: left; }
+      .item-properties-page .text-of-item .pdf-instruction .text-instruction {
+        float: left;
+        line-height: 1.65; }
+        .item-properties-page .text-of-item .pdf-instruction .text-instruction a {
+          font-size: 16px;
+          color: #ED9100;
+          text-decoration: none; }
+        .item-properties-page .text-of-item .pdf-instruction .text-instruction a:hover {
+          text-decoration: underline; }
   .item-properties-page .img-wrapper {
     float: right;
     padding-right: 5%;
