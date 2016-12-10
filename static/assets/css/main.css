@@ -271,7 +271,7 @@ hr {
         text-transform: uppercase; }
     .item-properties-page .img-wrapper img {
       max-height: 500px;
-      width: auto; }
+      max-width: 100%; }
 
 footer {
   width: 100%;
