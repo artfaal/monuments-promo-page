@@ -335,11 +335,28 @@ footer {
   width: 100%;
   background-color: #cacaca;
   position: relative;
-  min-height: 300px;
   font-size: 0.8em;
   padding: 3em 0;
   margin-top: 0;
   font-weight: 400;
   color: #7c7c7c;
   float: left;
+  .left-footer {
+    float: left;
+    display: inline-block;
+    width: 33.333%;
+    img {
+      padding-left: 15%;
+    }
+  }
+  .center-footer {
+    display: inline-block;
+    float: left;
+    width: 33.333%;
+  }
+  .right-footer {
+    display: inline-block;
+    float: left;
+    width: 33.333%;
+  }
 }

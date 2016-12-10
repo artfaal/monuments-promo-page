@@ -270,12 +270,25 @@ footer {
   width: 100%;
   background-color: #cacaca;
   position: relative;
-  min-height: 300px;
   font-size: 0.8em;
   padding: 3em 0;
   margin-top: 0;
   font-weight: 400;
   color: #7c7c7c;
   float: left; }
+  footer .left-footer {
+    float: left;
+    display: inline-block;
+    width: 33.333%; }
+    footer .left-footer img {
+      padding-left: 15%; }
+  footer .center-footer {
+    display: inline-block;
+    float: left;
+    width: 33.333%; }
+  footer .right-footer {
+    display: inline-block;
+    float: left;
+    width: 33.333%; }
 
 /*# sourceMappingURL=main.css.map */
