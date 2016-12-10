@@ -90,7 +90,8 @@ img {
 
 .row > nav > div > a {
   text-align: center;
-  font-size: 14px;
+  //white-space: nowrap;
+  font-size: 13px;
   width: 100%;
   height: 100%;
   display: block;
@@ -278,19 +279,56 @@ hr {
 .item-properties-page {
   padding-top: 50px;
   width: 100%;
-  //margin: 0 5%;
 
   .text-of-item {
     padding-left: 5%;
     float: left;
-    width: 50%;
+    width: 60%;
     color: #646464;
+    text-align: justify;
+    ul {
+      list-style-type: square;
+    }
+    hr {
+      margin: 0;
+    }
+
+    .pdf-instruction {
+      margin: 20px 0;
+      a {
+        font-size: 16px;
+        color: #ED9100;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
   }
+
   .img-wrapper {
     float: right;
     padding-right: 5%;
     width: 30%;
-   }
+    position: relative;
+    .price {
+      position: absolute;
+      bottom: 15%;
+      left: 40%;
+      background: orange;
+      padding: 15px;
+      span {
+        font-size: 25px;
+        font-weight: 300;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+    img {
+      max-height: 500px;
+      width: auto;
+    }
+  }
 }
 
 footer {
