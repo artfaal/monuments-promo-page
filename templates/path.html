@@ -1,0 +1,27 @@
+{% extends "layout.html" -%}
+{%- block title -%}Как добраться{% endblock -%}
+{% block description -%}Оборудование для саун Monuments: электрические печи и системы управления. {% endblock -%}
+{%- block keywords -%}MONUMENTS, iron, control, печи для саун, печи для бань, оборудование для саун, купить печь для
+    сауны {%- endblock -%}
+{% block content %}
+    <div class="parallax-window" data-parallax="scroll"
+         data-image-src="{{ url_for('static', filename='img/header_02.jpg') }}"></div>
+    <div class="title-of-the-page">
+        <div class="wrapper-text">
+            <h1>Как добраться</h1>
+        </div>
+        <div class="common-page">
+            <h2>Наш офис находится по адресу:</h2>
+            <br>
+            Россия, г. Москва, м. Румянцево, Киевское шоссе, БП Румянцево, Строение 1, корп. Г, оф. 928
+            <br>
+            <h3>Как добраться пешком:</h3>
+            <br>
+            <b>м. Румянцево.</b> Первый вагон из центра. Дальше пешком по территории БЦ до корпуса Г, подъезд 17 либо 18, 9
+            этаж, офис 928.
+            <br>
+            При себе необходимо иметь документ удостоверяющий личность. Заказать пропуск за 30 минут.
+            <br><br><br><br>
+        </div>
+    </div>
+{% endblock %}

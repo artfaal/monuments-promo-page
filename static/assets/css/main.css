@@ -63,7 +63,7 @@ img {
 .row > nav {
   float: right;
   margin-top: -35px;
-  width: 50%; }
+  width: 70%; }
 
 .row > nav > div {
   float: right;
@@ -170,6 +170,8 @@ h2 {
   display: inline-block;
   /*padding-left: 100px;
   padding-right: 100px;*/ }
+  .items a {
+    color: #ffffff; }
 
 .columns-main-page {
   width: 23%;
@@ -203,6 +205,14 @@ hr {
 .white-page {
   width: 100%;
   text-align: center; }
+
+.common-page {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  text-align: left; }
+  .common-page h3 {
+    font-weight: 100; }
 
 .wrapper-for-items {
   padding-top: 100px;
