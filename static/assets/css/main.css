@@ -63,10 +63,10 @@ img {
 .row > nav {
   float: right;
   margin-top: -35px;
-  width: 60%; }
+  width: 50%; }
 
 .row > nav > div {
-  float: left;
+  float: right;
   width: 20%;
   height: 100%;
   position: relative; }
@@ -102,7 +102,7 @@ img {
   border-radius: 0 0 3px 3px; }
 
 .row > nav > div:first-of-type > div {
-  left: 0;
+  right: 0;
   border-radius: 0 0 3px 0; }
 
 .row > nav > div:last-of-type > div {
