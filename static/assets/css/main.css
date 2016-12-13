@@ -192,6 +192,14 @@ header {
   vertical-align: top;
   width: 23%;
   display: inline-block; }
+  @media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .wrapper-item {
+      width: 45%;
+      padding-bottom: 2em; } }
+  @media only screen and (max-width: 600px) {
+    .wrapper-item {
+      width: 100%;
+      padding-bottom: 2em; } }
 
 .header-item {
   color: darkorange;
@@ -205,14 +213,18 @@ header {
   color: #282828; }
 
 .item-properties-page {
-  padding: 6em 6em;
-  display: table; }
+  padding: 6em 6em; }
+  @media only screen and (max-width: 1023px) {
+    .item-properties-page {
+      padding: 1em; } }
   .item-properties-page .text-of-item {
-    display: table-cell;
     float: left;
     width: 60%;
     color: #646464;
     text-align: justify; }
+    @media only screen and (max-width: 1023px) {
+      .item-properties-page .text-of-item {
+        width: 100%; } }
     .item-properties-page .text-of-item ul {
       list-style-type: square; }
     .item-properties-page .text-of-item .pdf-instruction {
@@ -232,6 +244,10 @@ header {
     float: right;
     width: 40%;
     position: relative; }
+    @media only screen and (max-width: 1023px) {
+      .item-properties-page .img-wrapper {
+        width: 100%;
+        float: left; } }
     .item-properties-page .img-wrapper .price {
       position: absolute;
       bottom: 15%;
@@ -256,19 +272,34 @@ footer {
   font-weight: 400;
   color: #7c7c7c;
   float: left; }
+  @media only screen and (max-width: 1023px) {
+    footer {
+      text-align: center; } }
   footer .left-footer {
     float: left;
     display: inline-block;
     width: 30%; }
+    @media only screen and (max-width: 1023px) {
+      footer .left-footer {
+        display: none; } }
     footer .left-footer img {
       padding-left: 15%; }
   footer .center-footer {
     display: inline-block;
     float: left;
     width: 50%; }
+    @media only screen and (max-width: 1023px) {
+      footer .center-footer {
+        display: none; } }
   footer .right-footer {
     display: inline-block;
     float: left;
     width: 20%; }
+    @media only screen and (max-width: 1023px) {
+      footer .right-footer {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.5em; } }
 
 /*# sourceMappingURL=main.css.map */

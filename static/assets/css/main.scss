@@ -287,6 +287,14 @@ header {
   vertical-align: top;
   width: 23%;
   display: inline-block;
+  @include media_L {
+    width: 45%;
+    padding-bottom: 2em;
+  }
+  @include media_S {
+    width: 100%;
+    padding-bottom: 2em;
+  }
 }
 
 .header-item {
@@ -304,15 +312,18 @@ header {
 
 .item-properties-page {
   padding: $glob_padding $glob_padding;
-  //width: 100%;
-  display: table;
+  @include media_S_L {
+    padding: 1em;
+  }
 
   .text-of-item {
-    display: table-cell;
     float: left;
     width: 60%;
     color: $default_text_gray_on_white;
     text-align: justify;
+    @include media_S_L {
+      width: 100%;
+    }
     ul {
       list-style-type: square;
     }
@@ -339,10 +350,12 @@ header {
   }
   .img-wrapper {
     float: right;
-    //padding-right: 5%;
     width: 40%;
     position: relative;
-    //width: 100%;
+    @include media_S_L {
+      width: 100%;
+      float: left;
+    }
     .price {
       position: absolute;
       bottom: 15%;
@@ -372,10 +385,17 @@ footer {
   font-weight: 400;
   color: #7c7c7c;
   float: left;
+  @include media_S_L {
+  text-align: center;
+  }
   .left-footer {
     float: left;
     display: inline-block;
     width: 30%;
+    @include media_S_L {
+      display: none;
+
+    }
     img {
       padding-left: 15%;
     }
@@ -384,10 +404,19 @@ footer {
     display: inline-block;
     float: left;
     width: 50%;
+    @include media_S_L {
+      display: none;
+    }
   }
   .right-footer {
     display: inline-block;
     float: left;
     width: 20%;
+    @include media_S_L {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      font-size: 1.5em;
+    }
   }
 }
