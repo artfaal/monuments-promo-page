@@ -9,6 +9,10 @@
         </div>
     </div>
     <div class="item-properties-page">
+        <div class="img-wrapper">
+            {% block img_path %}{% endblock %}
+            <div class="price"><span>{% block price %}{% endblock %}</span></div>
+        </div>
         <div class="text-of-item">
             {% block description_item %}{% endblock %}
             <hr>
@@ -16,10 +20,6 @@
                 <img src="{{ url_for('static', filename='img/pdf_icon.png') }}" alt="">
                 <div class="text-instruction">{% block path_to_instruction %}{% endblock %}</div>
             </div>
-        </div>
-        <div class="img-wrapper">
-            {% block img_path %}{% endblock %}
-            <div class="price"><span>{% block price %}{% endblock %}</span></div>
         </div>
     </div>
 {% endblock %}
