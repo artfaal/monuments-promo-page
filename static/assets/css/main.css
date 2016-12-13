@@ -42,17 +42,30 @@ header {
 
 .container-fluid {
   padding: 0 6em; }
+  @media only screen and (max-width: 1023px) {
+    .container-fluid {
+      padding: 0; } }
+  @media only screen and (max-width: 1023px) {
+    .container-fluid .row .logo {
+      display: none; } }
 
 .row > nav {
   float: right;
   margin-top: -3.1em;
   width: 70%; }
+  @media only screen and (max-width: 1023px) {
+    .row > nav {
+      width: 100%;
+      margin-top: 3.1em; } }
 
 .row > nav > div {
   float: right;
   width: 20%;
   height: 100%;
   position: relative; }
+  @media only screen and (max-width: 1023px) {
+    .row > nav > div {
+      width: 33.333%; } }
 
 .row > nav > div > a {
   text-align: center;
@@ -99,6 +112,9 @@ header {
 .parallax-window {
   min-height: 40em;
   background: transparent; }
+  @media only screen and (max-width: 1023px) {
+    .parallax-window {
+      min-height: 20em; } }
 
 .main {
   z-index: 100;
@@ -106,6 +122,9 @@ header {
   padding: 6em;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff; }
+  @media only screen and (max-width: 1023px) {
+    .main {
+      padding: 1em .1em; } }
 
 .wrapper-items {
   width: 100%;

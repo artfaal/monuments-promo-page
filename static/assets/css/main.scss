@@ -1,5 +1,5 @@
-$global_padding_left: 6em;
-$global_padding_left_right: 6em;
+$glob_padding: 6em;
+$media_less_padding: .5em;
 $height_of_header: 6.5em;
 
 $default_white: #ffffff;
@@ -16,6 +16,37 @@ $default_light_gray_bg: #cacaca;
 $bg_animation: background-color 0.3s ease;
 
 $nav_bg_hover: #e7e7e7;
+
+////////////////////
+$small: 600px;
+$b_small: $small + 1;
+$large: 1024px;
+$l_large: $large - 1;
+@mixin media_S {
+  @media only screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin media_S_L {
+  @media only screen and (max-width: $l_large) {
+    @content;
+  }
+}
+
+@mixin media_L {
+  @media only screen and (min-width: $b_small) and (max-width: $l_large) {
+    @content;
+  }
+}
+
+@mixin media_XL {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+////////////////
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,600italic);
 
@@ -71,7 +102,18 @@ header {
 }
 
 .container-fluid {
-  padding: 0 $global_padding_left;
+  padding: 0 $glob_padding;
+  @include media_S_L {
+    padding: 0;
+  }
+  .row {
+    .logo {
+      @include media_S_L {
+        display: none;
+      }
+      //display: none;
+    }
+  }
 }
 
 .row {
@@ -95,6 +137,11 @@ img {
   float: right;
   margin-top: -3.1em;
   width: 70%;
+  @include media_S_L {
+    width: 100%;
+    //text-align: center;
+    margin-top: 3.1em;
+  }
 }
 
 .row > nav > div {
@@ -102,6 +149,9 @@ img {
   width: 20%;
   height: 100%;
   position: relative;
+  @include media_S_L {
+    width: 33.333%;
+  }
 }
 
 .row > nav > div > a {
@@ -157,14 +207,20 @@ img {
 .parallax-window {
   min-height: 40em;
   background: transparent;
+  @include media_S_L {
+    min-height: 20em;
+  }
 }
 
 .main {
   z-index: 100;
   background: $default_dark_gray;
-  padding: $global_padding_left_right;
+  padding: $glob_padding;
   font-family: 'Open Sans', sans-serif;
   color: $default_white;
+  @include media_S_L {
+    padding: 1em .1em;
+  }
 }
 
 .wrapper-items {
@@ -191,7 +247,7 @@ img {
 
 .title-of-the-page {
   background: linear-gradient(to bottom, rgba(252, 252, 252, 1) 0%, rgba(224, 224, 224, 1) 65%, rgba(217, 217, 217, 1) 75%, rgba(207, 207, 207, 1) 100%);
-  padding: 1em $global_padding_left;
+  padding: 1em $glob_padding;
   .wrapper-text {
     color: $default_dark_gray;
     h1 {
@@ -214,7 +270,7 @@ img {
 
 .common-page {
   //background-color: $default_light_gray_bg;
-  padding-left: $global_padding_left;
+  padding-left: $glob_padding;
   width: 100%;
   text-align: left;
   h3 {
@@ -250,7 +306,7 @@ img {
 }
 
 .item-properties-page {
-  padding: $global_padding_left_right $global_padding_left_right;
+  padding: $glob_padding $glob_padding;
   //width: 100%;
   display: table;
 
