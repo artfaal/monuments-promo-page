@@ -109,7 +109,8 @@ header {
   .row {
     .logo {
       @include media_S_L {
-        display: none;
+        text-align: center;
+        width: 100%;
       }
       //display: none;
     }
@@ -140,7 +141,8 @@ img {
   @include media_S_L {
     width: 100%;
     //text-align: center;
-    margin-top: 3.1em;
+    //margin-top: 3.1em;
+    margin-top: -.1em;
   }
 }
 
@@ -219,7 +221,7 @@ img {
   font-family: 'Open Sans', sans-serif;
   color: $default_white;
   @include media_S_L {
-    padding: 1em .1em;
+    padding: 1em 1em;
   }
 }
 
@@ -243,6 +245,14 @@ img {
   display: inline-block;
   vertical-align: top;
   padding: 0 .4em;
+  @include media_L {
+    width: 44%;
+    padding-bottom: 2em;
+  }
+  @include media_S {
+    width: 90%;
+    padding-bottom: 1em;
+  }
 }
 
 .title-of-the-page {
