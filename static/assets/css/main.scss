@@ -112,26 +112,8 @@ header {
         text-align: center;
         width: 100%;
       }
-      //display: none;
     }
   }
-}
-
-.row {
-  //width: 100%;
-  //height: 50px;
-  //margin-right: -15px;
-  //margin-left: -15px;
-}
-
-.img-responsive {
-  //display: block;
-  //max-width: 100%;
-  //height: auto;
-}
-
-img {
-  //vertical-align: middle;
 }
 
 .row > nav {
@@ -258,6 +240,9 @@ img {
 .title-of-the-page {
   background: linear-gradient(to bottom, rgba(252, 252, 252, 1) 0%, rgba(224, 224, 224, 1) 65%, rgba(217, 217, 217, 1) 75%, rgba(207, 207, 207, 1) 100%);
   padding: 1em $glob_padding;
+  @include media_S_L {
+    padding: 1em 1em;
+  }
   .wrapper-text {
     color: $default_dark_gray;
     h1 {
@@ -270,6 +255,9 @@ img {
   p {
     color: $dark_white_text;
     font-weight: 300;
+    @include media_S {
+      text-align: justify;
+    }
   }
 }
 
@@ -289,8 +277,7 @@ img {
 }
 
 .wrapper-for-items {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding: 6em 0;
   width: 100%;
   text-align: center;
   display: inline-block;

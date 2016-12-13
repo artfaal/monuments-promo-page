@@ -156,6 +156,9 @@ header {
 .title-of-the-page {
   background: linear-gradient(to bottom, #fcfcfc 0%, #e0e0e0 65%, #d9d9d9 75%, #cfcfcf 100%);
   padding: 1em 6em; }
+  @media only screen and (max-width: 1023px) {
+    .title-of-the-page {
+      padding: 1em 1em; } }
   .title-of-the-page .wrapper-text {
     color: #282828; }
     .title-of-the-page .wrapper-text h1 {
@@ -164,6 +167,9 @@ header {
 .main-page-text p {
   color: #aaa;
   font-weight: 300; }
+  @media only screen and (max-width: 600px) {
+    .main-page-text p {
+      text-align: justify; } }
 
 .items-page {
   width: 100%;
@@ -177,8 +183,7 @@ header {
     font-weight: 100; }
 
 .wrapper-for-items {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding: 6em 0;
   width: 100%;
   text-align: center;
   display: inline-block; }
