@@ -150,7 +150,7 @@ header {
       padding-bottom: 2em; } }
   @media only screen and (max-width: 600px) {
     .columns-main-page {
-      width: 90%;
+      width: 100%;
       padding-bottom: 1em; } }
 
 .title-of-the-page {
