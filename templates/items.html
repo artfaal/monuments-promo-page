@@ -3,7 +3,7 @@
 {% block description -%}Купить оборудование для сауны Monunents: электрическая печь для бани, сауны, пульт управления. {% endblock -%}
 {%- block keywords -%}MONUMENTS, iron, control, печи для саун, печи для бань, оборудование для саун, купить печь для сауны{%- endblock -%}
 {% block content %}
-    <div class="parallax-window" data-parallax="scroll"
+    <div class="parallax-window" data-parallax="scroll" data-position-y="0px"
          data-image-src="{{ url_for('static', filename='img/header_02.jpg') }}"></div>
     <div class="title-of-the-page">
         <div class="wrapper-text">
@@ -16,7 +16,7 @@
             <a href="iron_control.html">
                 <div class="wrapper-item">
                     <div class="img-item"><img src="{{ url_for('static', filename='img/items/control.jpg') }}" alt=""
-                                               height="230px"></div>
+                                               height="230px" ></div>
                     <div class="header-item">IRON Control</div>
                     <div class="text-item">Пульт управления для сауны.</div>
                 </div>
