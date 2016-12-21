@@ -202,8 +202,14 @@ header {
   padding: $glob_padding;
   font-family: 'Open Sans', sans-serif;
   color: $default_white;
-  @include media_S_L {
+  @include media_L {
     padding: 1em 1em;
+  }
+  @include  media_S {
+    padding: 0;
+    margin: 0;
+    background: $default_white;
+    color: $default_dark_gray;
   }
 }
 
@@ -227,14 +233,46 @@ header {
   display: inline-block;
   vertical-align: top;
   padding: 0 .4em;
+  &:hover .wrapper-main-img > .price-main-page {
+    transition: $bg_animation;
+    background: $default_orange;
+    color: $default_white;
+  }
   @include media_L {
     width: 44%;
     padding-bottom: 2em;
   }
   @include media_S {
     width: 100%;
-    padding-bottom: 1em;
-
+    padding: 0 0 5em 0;
+  }
+  .wrapper-main-img {
+    .price-main-page {
+      font-size: 1.2em;
+      background: $default_white;
+      color: $default_dark_gray;
+      text-align: center;
+      padding: .3em 0;
+      margin-top: 0;
+      @include media_S {
+        font-size: 2em;
+        color: $default_orange;
+      }
+    }
+  }
+  .title-thumb-item {
+    @include media_S {
+      padding: 0 1em;
+      color: $default_dark_gray;
+      text-align: center;
+    }
+  }
+  .short-desc-item {
+    @include media_S {
+      color: $default_dark_gray;
+      padding: 1em;
+      text-align: center;
+    }
   }
 }
 
@@ -253,11 +291,13 @@ header {
 }
 
 .main-page-text {
+  padding: 1em;
   p {
     color: $dark_white_text;
     font-weight: 300;
     @include media_S {
       text-align: justify;
+      color: $default_dark_gray;
     }
   }
 }
@@ -387,7 +427,7 @@ footer {
   color: #7c7c7c;
   float: left;
   @include media_S_L {
-  text-align: center;
+    text-align: center;
   }
   .left-footer {
     float: left;

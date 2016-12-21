@@ -123,9 +123,15 @@ header {
   padding: 6em;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (min-width: 601px) and (max-width: 1023px) {
     .main {
       padding: 1em 1em; } }
+  @media only screen and (max-width: 600px) {
+    .main {
+      padding: 0;
+      margin: 0;
+      background: #ffffff;
+      color: #282828; } }
 
 .wrapper-items {
   width: 100%;
@@ -144,6 +150,10 @@ header {
   display: inline-block;
   vertical-align: top;
   padding: 0 .4em; }
+  .columns-main-page:hover .wrapper-main-img > .price-main-page {
+    transition: background-color 0.3s ease;
+    background: darkorange;
+    color: #ffffff; }
   @media only screen and (min-width: 601px) and (max-width: 1023px) {
     .columns-main-page {
       width: 44%;
@@ -151,7 +161,28 @@ header {
   @media only screen and (max-width: 600px) {
     .columns-main-page {
       width: 100%;
-      padding-bottom: 1em; } }
+      padding: 0 0 5em 0; } }
+  .columns-main-page .wrapper-main-img .price-main-page {
+    font-size: 1.2em;
+    background: #ffffff;
+    color: #282828;
+    text-align: center;
+    padding: .3em 0;
+    margin-top: 0; }
+    @media only screen and (max-width: 600px) {
+      .columns-main-page .wrapper-main-img .price-main-page {
+        font-size: 2em;
+        color: darkorange; } }
+  @media only screen and (max-width: 600px) {
+    .columns-main-page .title-thumb-item {
+      padding: 0 1em;
+      color: #282828;
+      text-align: center; } }
+  @media only screen and (max-width: 600px) {
+    .columns-main-page .short-desc-item {
+      color: #282828;
+      padding: 1em;
+      text-align: center; } }
 
 .title-of-the-page {
   background: linear-gradient(to bottom, #fcfcfc 0%, #e0e0e0 65%, #d9d9d9 75%, #cfcfcf 100%);
@@ -164,12 +195,15 @@ header {
     .title-of-the-page .wrapper-text h1 {
       font-weight: 600; }
 
-.main-page-text p {
-  color: #aaa;
-  font-weight: 300; }
-  @media only screen and (max-width: 600px) {
-    .main-page-text p {
-      text-align: justify; } }
+.main-page-text {
+  padding: 1em; }
+  .main-page-text p {
+    color: #aaa;
+    font-weight: 300; }
+    @media only screen and (max-width: 600px) {
+      .main-page-text p {
+        text-align: justify;
+        color: #282828; } }
 
 .items-page {
   width: 100%;
