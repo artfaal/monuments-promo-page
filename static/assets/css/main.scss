@@ -227,6 +227,11 @@ header {
   display: inline-block;
   vertical-align: top;
   padding: 0 .4em;
+  &:hover .wrapper-main-img > .price-main-page {
+    transition: $bg_animation;
+    background: $default_orange;
+    color: $default_white;
+  }
   @include media_L {
     width: 44%;
     padding-bottom: 2em;
@@ -234,7 +239,16 @@ header {
   @include media_S {
     width: 100%;
     padding-bottom: 1em;
-
+  }
+  .wrapper-main-img {
+    .price-main-page {
+      font-size: 1.2em;
+      background: $default_white;
+      color: $default_dark_gray;
+      text-align: center;
+      padding: .3em 0;
+      margin-top: 0;
+    }
   }
 }
 
@@ -387,7 +401,7 @@ footer {
   color: #7c7c7c;
   float: left;
   @include media_S_L {
-  text-align: center;
+    text-align: center;
   }
   .left-footer {
     float: left;
