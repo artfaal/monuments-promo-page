@@ -210,8 +210,11 @@ header {
   text-align: center; }
 
 .common-page {
-  padding-left: 6em;
+  padding: 0 6em;
   text-align: left; }
+  @media only screen and (max-width: 1023px) {
+    .common-page {
+      padding: 0 1em; } }
   .common-page h3 {
     font-weight: 100; }
 
