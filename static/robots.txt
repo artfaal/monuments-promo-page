@@ -1,0 +1,4 @@
+User-agent: *
+
+HOST: monuments-production.ru
+Sitemap: http://monuments-production.ru/sitemap.xml

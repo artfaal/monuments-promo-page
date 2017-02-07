@@ -1,0 +1,17 @@
+{% from "macros.html" import def_service_request_form, def_contact_form with context -%}
+{% extends "layout.html" -%}
+{%- block title -%}Сервисный центр {% endblock -%}
+{% block description -%}Сервисное и гарантийное обслуживание оборудования{% endblock -%}
+{%- block keywords -%}ремонт, сервисное обслуживание{%- endblock -%}
+{% block content %}
+    <div class="parallax-window" data-parallax="scroll" data-position-y="0px"
+         data-image-src="{{ url_for('static', filename='img/header_02.jpg') }}"></div>
+    <div class="title-of-the-page">
+        <div class="wrapper-text">
+            <h1>Сервисный центр</h1>
+        </div>
+    </div>
+    <div class="common-page">
+        {{ def_service_request_form() }}
+    </div>
+{% endblock %}

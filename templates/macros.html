@@ -1,0 +1,70 @@
+{% macro render_field(field) %}
+  <dt>{{ field.label }}
+  <dd>{{ field(**kwargs) }}
+  {% if field.errors %}
+    <ul class=errors>
+    {% for error in field.errors %}
+      <li>{{ error }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+  </dd>
+{% endmacro %}
+
+{% macro def_contact_form() -%}
+    <div class= 'clear'></div>
+    <div class="feedback">
+{#        <div class="feedback-title"><p>ОБРАТНАЯ СВЯЗЬ:</p></div>#}
+        <div class="default-form-handler">
+            <form role="form" action="" method="post">
+                {{ form.csrf_token }}
+                <div class="comm-form-hold">
+                    {{ render_field(form.name) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(form.email) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(form.phone) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(form.body) }}
+                </div>
+                {{ recaptcha }}
+                <button type="submit" name="feedback" value="Default_Send">Отправить</button>
+            </form>
+        </div>
+    </div>
+{%- endmacro -%}
+
+{% macro def_service_request_form() -%}
+    <div class= 'clear'></div>
+    <div class="feedback">
+{#        <div class="feedback-title"><p>ЗАЯВКА:</p></div>#}
+        <div class="default-form-handler">
+            <form role="form" action="" method="post">
+                {{ form.csrf_token }}
+                <div class="comm-form-hold">
+                    {{ render_field(service_form.equipment) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(service_form.body) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(service_form.name) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(service_form.phone) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(service_form.email) }}
+                </div>
+                <div class="comm-form-hold">
+                    {{ render_field(service_form.comment) }}
+                </div>
+                {{ recaptcha }}
+                <button type="submit" name="feedback" value="Service_Send">Отправить</button>
+            </form>
+        </div>
+    </div>
+{%- endmacro -%}

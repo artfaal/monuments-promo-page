@@ -205,7 +205,7 @@ header {
   @include media_L {
     padding: 1em 1em;
   }
-  @include  media_S {
+  @include media_S {
     padding: 0;
     margin: 0;
     background: $default_white;
@@ -310,7 +310,7 @@ header {
 .common-page {
   padding: 0 $glob_padding;
   text-align: left;
-  @include media_S_L{
+  @include media_S_L {
     padding: 0 1em;
   }
   h3 {
@@ -461,4 +461,74 @@ footer {
       font-size: 1.5em;
     }
   }
+}
+
+.feedback {
+  padding-top: 4em;
+  color: $default_light_gray_text
+
+}
+
+.default-form-handler {
+  dt {
+    padding-bottom: .5em;
+  }
+  dd {
+    margin-left: 0;
+    ul {
+      //display: inline-block;
+      //float: left;
+      list-style: none;
+      padding: 0;
+      font-size: .7em;
+    }
+  }
+  input:focus, textarea:focus {
+    outline: none !important;
+    border-bottom: solid 2px $default_orange !important;
+    //box-shadow: 0 0 3px $default_orange;
+  }
+  .comm-form-hold {
+    padding-bottom: 2em;
+  }
+  .comm-form-hold input, textarea {
+    width: 50%;
+    border: none;
+    border-bottom: solid 1px gray;
+    //border-radius: 0;
+    font-size: 1em;
+    padding: .5em 0em;
+    @include media_L {
+      width: 75%;
+    }
+    @include media_S {
+      width: 98%;
+    }
+  }
+  button {
+    margin: 1em 0;
+    border-radius: 0;
+    border: solid 1px $default_light_gray_bg;
+    color: $default_text_gray_on_white;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding: .5em;
+  }
+  .errors {
+    color: red;
+  }
+}
+
+.flashes {
+  //color: green;
+  //background-color: #c0c0c0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 999999;
+  list-style: none;
+  text-align: center;
+  font-size: 2em;
 }
