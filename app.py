@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, redirect, flash, url_for, send_from_directory
-from forms import FeedbackForm, ServiceRequest
 from flask_mail import Mail, Message
 from flask_recaptcha import ReCaptcha
 from wtforms import Form
